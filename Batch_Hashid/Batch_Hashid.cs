@@ -53,49 +53,52 @@ namespace Batch_Hashid
             List<BatchUploadModel> batchids = new List<BatchUploadModel>();
             try
             {
-                batchids = (from b in dc.BatchUploadDatas
-                            .AsEnumerable()
-                            where b.Status == "Insertion Completed"
-                            select new BatchUploadModel()
-                            {
-                                Batchid = b.PK_Batchid,
-                                CreatedDate = b.CreatedDate.Value.Date,
-                                fk_rid = b.FK_RID,
-                                fk_cid = b.FK_ClientID,
-                                status = b.Status
-                            }).ToList();
-                //if batchdata available
-                if (batchids.Count != 0)
+                using (dc = new shortenURLEntities())
                 {
-                    List<BatchData> batchdata = (from u in dc.UIDDATAs
-                                                 .AsNoTracking()
-                                                 .AsEnumerable()
-                                                 join b in batchids on u.FK_Batchid equals b.Batchid
-                                                 where DateTime.Compare(u.CreatedDate.GetValueOrDefault().Date, b.CreatedDate.GetValueOrDefault().Date) == 0 && u.FK_RID == b.fk_rid && u.FK_ClientID == b.fk_cid && u.UniqueNumber == null && u.FK_Batchid!=null
-                                                 select new BatchData()
-                                                 {
-                                                     pk_uid = u.PK_Uid
-
-                                                 }).ToList();
-                    if (batchdata.Count != 0)
+                    batchids = (from b in dc.BatchUploadDatas
+                                .AsEnumerable()
+                                where b.Status == "Insertion Completed"
+                                select new BatchUploadModel()
+                                {
+                                    Batchid = b.PK_Batchid,
+                                    CreatedDate = b.CreatedDate.Value.Date,
+                                    fk_rid = b.FK_RID,
+                                    fk_cid = b.FK_ClientID,
+                                    status = b.Status
+                                }).ToList();
+                    //if batchdata available
+                    if (batchids.Count != 0)
                     {
-                        List<BatchData> hashids = (from lb in batchdata
-                                                   select new BatchData()
-                                                   {
-                                                       pk_uid = lb.pk_uid,
-                                                       hashid = GetHashID(lb.pk_uid)
-                                                   }).ToList();
-                        foreach (BatchData i in hashids)
+                        List<BatchData> batchdata = (from u in dc.UIDDATAs
+                                                     .AsNoTracking()
+                                                     .AsEnumerable()
+                                                     join b in batchids on u.FK_Batchid equals b.Batchid
+                                                     where DateTime.Compare(u.CreatedDate.GetValueOrDefault().Date, b.CreatedDate.GetValueOrDefault().Date) == 0 && u.FK_RID == b.fk_rid && u.FK_ClientID == b.fk_cid && u.UniqueNumber == null && u.FK_Batchid != null
+                                                     select new BatchData()
+                                                     {
+                                                         pk_uid = u.PK_Uid
+
+                                                     }).ToList();
+                        if (batchdata.Count != 0)
                         {
-                            new DataInsertionBO().UpdateHashid(i.pk_uid, i.hashid);
-                        }
-                        foreach (BatchUploadModel b in batchids)
-                        {
-                            new DataInsertionBO().UpdateBatchStatus(b.Batchid, "Completed");
+                            List<BatchData> hashids = (from lb in batchdata
+                                                       select new BatchData()
+                                                       {
+                                                           pk_uid = lb.pk_uid,
+                                                           hashid = GetHashID(lb.pk_uid)
+                                                       }).ToList();
+                            foreach (BatchData i in hashids)
+                            {
+                                new DataInsertionBO().UpdateHashid(i.pk_uid, i.hashid);
+                            }
+                            foreach (BatchUploadModel b in batchids)
+                            {
+                                new DataInsertionBO().UpdateBatchStatus(b.Batchid, "Completed");
+                            }
                         }
                     }
                 }
-            }
+             }
             catch (Exception ex)
             {
                 ErrorLogs.LogErrorData(ex.StackTrace, ex.InnerException.ToString());
