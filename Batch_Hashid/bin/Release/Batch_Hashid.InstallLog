@@ -1,0 +1,52 @@
+﻿Installing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe assembly.
+Committing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe assembly.
+Committing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe assembly.
+Committing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
+Installing service Batch_Hashid...
+Service Batch_Hashid has been successfully installed.
+Creating EventLog source Batch_Hashid in log Application...
+Committing assembly 'C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.InstallLog
+   assemblypath = C:\Users\yasodha\Documents\Visual Studio 2013\Projects\Yasodha Shorten URL documents\Windows Service\Batch_Hashid\Batch_Hashid\bin\Release\Batch_Hashid.exe
