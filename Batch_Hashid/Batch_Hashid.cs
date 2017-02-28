@@ -71,7 +71,7 @@ namespace Batch_Hashid
                                                  .AsNoTracking()
                                                  .AsEnumerable()
                                                  join b in batchids on u.FK_Batchid equals b.Batchid
-                                                 where DateTime.Compare(u.CreatedDate.GetValueOrDefault().Date, b.CreatedDate.GetValueOrDefault().Date) == 0 && u.FK_RID == b.fk_rid && u.FK_ClientID == b.fk_cid && u.UniqueNumber == null
+                                                 where DateTime.Compare(u.CreatedDate.GetValueOrDefault().Date, b.CreatedDate.GetValueOrDefault().Date) == 0 && u.FK_RID == b.fk_rid && u.FK_ClientID == b.fk_cid && u.UniqueNumber == null && u.FK_Batchid!=null
                                                  select new BatchData()
                                                  {
                                                      pk_uid = u.PK_Uid
